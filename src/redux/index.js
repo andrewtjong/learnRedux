@@ -3,11 +3,13 @@ const {combineReducers, createStore} = redux
 import countReducer from "./count"
 import favoriteThingsReducer from "./favoriteThings"
 import youTubeVideoReducer from "./youTubeVideo"
+import userReducer from "./user"
 
 const rootReducer = combineReducers({
     count: countReducer,
     favoriteThings: favoriteThingsReducer,
-    youTubeVideo: youTubeVideoReducer
+    youTubeVideo: youTubeVideoReducer,
+    user: userReducer
 })
 
 const store = createStore(rootReducer)
